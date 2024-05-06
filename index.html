@@ -19,7 +19,7 @@
             loading="lazy"
           />
         </a>
-        <nav class="header__menu">
+        <nav class="header__menu hidden-mobile">
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a href="#" class="header__menu-link">About us</a>
@@ -38,10 +38,43 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button button transparent" type="button">
+        <button class="header__button button transparent hidden-mobile" type="button">
           Request a quote
+        </button>
+        <button
+          class="header__modal-open-button"
+          type="button"
+          onclick="window.mobileOverlay.show()"
+        >
+          Open
         </button>
       </div>
     </header>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link"> About us </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link"> Services </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link"> Use Cases </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link"> Pricing </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link"> Blog </a>
+        </li>
+      </ul>
+      <button
+        class="header__modal-close-button"
+        type="button"
+        onclick="window.mobileOverlay.close()"
+      >
+        Close
+      </button>
+    </dialog>
   </body>
 </html>
