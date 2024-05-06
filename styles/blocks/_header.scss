@@ -1,0 +1,47 @@
+.header {
+  padding-top: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  &__menu {
+    margin-left: auto;
+    font-size: 20px;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &-link::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      height: 2px;
+      width: 0;
+      background-color: currentColor;
+      transition-duration: inherit;
+    }
+  }
+}

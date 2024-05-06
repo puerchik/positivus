@@ -1,0 +1,18 @@
+.button {
+  height: var(--button-height);
+  padding-inline: 35px;
+  border: var(--border);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: var(--border-radius);
+
+  @include hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-dark);
+  }
+}
