@@ -49,14 +49,15 @@
           Request a quote
         </button>
         <button
-          class="header__modal-open-button visible-mobile"
+          class="header__burger-button burger-button visible-mobile"
           type="button"
-          onclick="window.mobileOverlay.show()"
+          onclick="window.mobileOverlay.showModal()"
         >
           <span class="visually-hidden">Open navigation menu</span>
         </button>
       </div>
     </header>
+
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
       <ul class="mobile-overlay__list">
         <li class="mobile-overlay__item">
@@ -76,11 +77,11 @@
         </li>
       </ul>
       <button
-        class="header__modal-close-button"
+        class="header__modal-close-button cross-button"
         type="button"
         onclick="window.mobileOverlay.close()"
       >
-        Close
+        <span class="visually-hidden">Close</span>
       </button>
     </dialog>
   </body>
