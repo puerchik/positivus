@@ -25,4 +25,12 @@
   --section-padding-y: 70px;
 
   --transition-duration: 0.2s;
+
+  @include desktop {
+    --section-padding-y: 50px;
+  }
+
+  @include mobile {
+    --section-padding-y: 30px;
+  }
 }
