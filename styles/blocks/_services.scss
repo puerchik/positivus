@@ -11,12 +11,40 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
+    border: var(--border);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow);
   }
 
-  &__card {
+  &__item:nth-child(3n + 1) {
+    background-color: var(--color-gray);
+  }
+
+  &__item:nth-child(3n + 2) {
+    background-color: var(--color-accent);
+  }
+
+  &__item:nth-child(3n + 3) {
+    background-color: var(--color-dark);
+  }
+
+  &-card {
     display: flex;
     justify-content: space-between;
+    padding: 50px;
+    min-height: 310px;
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      line-height: 1.3;
+    }
   }
 }

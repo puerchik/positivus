@@ -694,10 +694,33 @@ h4 {
   gap: 40px;
 }
 .services__item {
-  display: flex;
-  justify-content: center;
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
 }
-.services__card {
+.services__item:nth-child(3n+1) {
+  background-color: var(--color-gray);
+}
+.services__item:nth-child(3n+2) {
+  background-color: var(--color-accent);
+}
+.services__item:nth-child(3n+3) {
+  background-color: var(--color-dark);
+}
+.services-card {
   display: flex;
   justify-content: space-between;
+  padding: 50px;
+  min-height: 310px;
+}
+.services-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services-card__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 1.3;
 }/*# sourceMappingURL=styles.css.map */
