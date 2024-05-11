@@ -28,3 +28,17 @@
     display: none !important;
   }
 }
+
+.accent-title-lime,
+.accent-title-light {
+  padding: 0px 7px 0px 7px;
+  border-radius: var(--border-radius-small);
+}
+
+.accent-title-lime {
+  background-color: var(--color-accent);
+}
+
+.accent-title-light {
+  background-color: var(--color-light);
+}
