@@ -50,7 +50,7 @@
     &__link-wrapper {
       display: flex;
       align-items: center;
-      column-gap: 15px;
+      column-gap: 8px;
     }
 
     &__link-img {
@@ -77,12 +77,23 @@
     &__link {
       font-size: 20px;
       line-height: 1.4;
+      padding: 0px 7px 0px 7px;
+
+      @include hover {
+        background-color: var(--color-accent);
+        border-radius: var(--border-radius-small);
+      }
     }
   }
 
   &__item:nth-child(3n + 3) {
     .services-card__link {
       color: var(--color-light);
+
+      @include hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+      }
 
       &-img {
         background-color: var(--color-light);
@@ -94,6 +105,15 @@
         svg *[stroke] {
           stroke: var(--color-dark);
         }
+      }
+    }
+  }
+
+  &__item:nth-child(3n + 2) {
+    .services-card__link {
+      @include hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
       }
     }
   }
