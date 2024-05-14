@@ -921,6 +921,11 @@ h4 {
   border-radius: var(--border-radius-large);
   align-self: stretch;
 }
+@media (max-width: 767.9px) {
+  .contact-us {
+    padding: 50px;
+  }
+}
 .contact-us__body {
   max-width: 500px;
   display: flex;
@@ -928,15 +933,35 @@ h4 {
   align-items: start;
   row-gap: 26px;
 }
+@media (max-width: 767.9px) {
+  .contact-us__body {
+    row-gap: 20px;
+  }
+}
 .contact-us__title {
   font-size: 30px;
   font-weight: 500;
   line-height: 1.3;
 }
+@media (max-width: 767.9px) {
+  .contact-us__title {
+    font-size: 26px;
+  }
+}
 .contact-us__desc {
   font-size: 18px;
   line-height: 1.3;
 }
+@media (max-width: 767.9px) {
+  .contact-us__desc {
+    font-size: 16px;
+  }
+}
 .contact-us__img {
   margin-block: -23px;
+}
+@media (max-width: 767.9px) {
+  .contact-us__img {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
