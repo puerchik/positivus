@@ -1075,7 +1075,8 @@ h4 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: var(--border);
 }
 .process__accordion[open] {
   --indicatorRotate: 0;
@@ -1116,4 +1117,7 @@ h4 {
   .process__accordion-title::before {
     font-size: 30px;
   }
+}
+.process__accordion-body {
+  padding-top: 30px;
 }/*# sourceMappingURL=styles.css.map */
