@@ -1075,6 +1075,7 @@ h4 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  margin-bottom: 60px;
 }
 .process__accordion[open] {
   --indicatorRotate: 0;
