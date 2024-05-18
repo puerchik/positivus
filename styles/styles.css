@@ -1068,6 +1068,16 @@ h4 {
   border-radius: var(--border-radius-large);
   transition-duration: var(--transition-duration);
 }
+@media (hover: hover) {
+  .process__accordion:hover {
+    background-color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .process__accordion:active {
+    background-color: var(--color-accent);
+  }
+}
 .process__accordion-header {
   display: flex;
   justify-content: space-between;
@@ -1075,8 +1085,6 @@ h4 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding-bottom: 30px;
-  border-bottom: var(--border);
 }
 .process__accordion[open] {
   --indicatorRotate: 0;
@@ -1120,4 +1128,6 @@ h4 {
 }
 .process__accordion-body {
   padding-top: 30px;
+  margin-top: 30px;
+  border-top: var(--border);
 }/*# sourceMappingURL=styles.css.map */

@@ -27,13 +27,15 @@
     border-radius: var(--border-radius-large);
     transition-duration: var(--transition-duration);
 
+    @include hover {
+      background-color: var(--color-accent);
+    }
+
     &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       user-select: none;
-      padding-bottom: 30px;
-      border-bottom: var(--border);
     }
 
     &[open] {
@@ -82,6 +84,8 @@
 
     &-body {
       padding-top: 30px;
+      margin-top: 30px;
+      border-top: var(--border);
     }
   }
 }
