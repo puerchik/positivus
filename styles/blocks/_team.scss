@@ -7,11 +7,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    @include desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__button {
     width: 100%;
     max-width: 269px;
     align-self: flex-end;
+
+    @include mobile {
+      max-width: 100%;
+      align-self: stretch;
+    }
   }
 }
