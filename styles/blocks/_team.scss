@@ -1,0 +1,17 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 269px;
+    align-self: flex-end;
+  }
+}
