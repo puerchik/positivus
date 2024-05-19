@@ -39,10 +39,18 @@
   }
 
   &__arrow-button {
+    color: var(--color-light);
     @include reset-button;
+    @include hover {
+      color: var(--color-accent);
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+    }
 
     svg *[fill] {
-      fill: var(--color-light);
+      fill: currentColor;
     }
   }
 }

@@ -1269,6 +1269,36 @@ h4 {
   }
 }
 
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+.pagination__item:last-child {
+  opacity: 0.3;
+}
+.pagination__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+@media (hover: hover) {
+  .pagination__button:not(.is-current):hover svg *[fill] {
+    fill: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .pagination__button:not(.is-current):active svg *[fill] {
+    fill: var(--color-accent);
+  }
+}
+.pagination__button svg *[fill] {
+  fill: var(--color-light);
+}
+.pagination__button.is-current svg *[fill] {
+  fill: var(--color-accent);
+}
+
 .reviews {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -1305,12 +1335,26 @@ h4 {
   padding-top: 90px;
 }
 .reviews__arrow-button {
+  color: var(--color-light);
   padding: 0;
   background-color: transparent;
   border: none;
 }
+@media (hover: hover) {
+  .reviews__arrow-button:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .reviews__arrow-button:active {
+    color: var(--color-accent);
+  }
+}
+.reviews__arrow-button[disabled] {
+  cursor: not-allowed;
+}
 .reviews__arrow-button svg *[fill] {
-  fill: var(--color-light);
+  fill: currentColor;
 }
 
 .review-card__body {
