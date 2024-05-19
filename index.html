@@ -1227,9 +1227,9 @@
           </div>
         </header>
         <div class="section__body">
-          <div class="contact-us">
-            <form class="contact-us__form">
-              <fieldset class="contact-us__request-types radios">
+          <div class="contact">
+            <form class="contact__form">
+              <fieldset class="contact__request-types radios">
                 <legend class="radios__title visually-hidden">Request types</legend>
                 <label class="radios__item radio">
                   <input
@@ -1240,7 +1240,7 @@
                     checked
                   />
                   <span class="radio__emulator"></span>
-                  <span class="">Say Hi</span>
+                  <span class="radio__label">Say Hi</span>
                 </label>
                 <label class="radios__item radio">
                   <input
@@ -1250,15 +1250,15 @@
                     value="Get a Quote"
                   />
                   <span class="radio__emulator"></span>
-                  <span class="">Get a Quote</span>
+                  <span class="radio__label">Get a Quote</span>
                 </label>
               </fieldset>
-              <div class="contact-us__body">
-                <div class="contact-us__field field">
+              <div class="contact__body">
+                <div class="contact__field field">
                   <label for="name" class="field__label">Name</label>
                   <input id="name" name="name" class="field__input" placeholder="Name" />
                 </div>
-                <div class="contact-us__field field">
+                <div class="contact__field field">
                   <label for="email" class="field__label">Email*</label>
                   <input
                     id="email"
@@ -1269,7 +1269,7 @@
                     required
                   />
                 </div>
-                <div class="contact-us__field field">
+                <div class="contact__field field">
                   <label for="message" class="field__label">Message*</label>
                   <textarea
                     class="field__input field__input--textarea"
@@ -1280,9 +1280,7 @@
                   ></textarea>
                 </div>
               </div>
-              <button class="contact-us__button button" type="submit">
-                Send Message
-              </button>
+              <button class="contact__button button" type="submit">Send Message</button>
             </form>
           </div>
         </div>

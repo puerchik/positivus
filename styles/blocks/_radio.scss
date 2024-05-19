@@ -1,0 +1,29 @@
+.radio {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  &__emulator {
+    @include square(28px);
+
+    position: relative;
+    display: block;
+    border: var(--border);
+    border-radius: 50%;
+    background-color: var(--color-light);
+  }
+
+  &__input:checked + &__emulator::after {
+    @include abs-center;
+    @include square(16px);
+
+    content: "";
+    background-color: var(--color-accent);
+    border-radius: 50%;
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}

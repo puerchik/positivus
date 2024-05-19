@@ -1,0 +1,33 @@
+.contact {
+  position: relative;
+  background-color: var(--color-gray-alt);
+  padding: 60px 100px 80px;
+  border-radius: var(--border-radius-large);
+  overflow-x: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("./../../images/contact-us/banner-form.svg") center/contain no-repeat;
+    width: 692px;
+    height: 648px;
+    top: 0;
+    right: 0;
+    translate: 47% 60px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 556px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}

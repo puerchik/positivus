@@ -1,0 +1,31 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  &__input {
+    padding: 18px 30px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    @include hover {
+      border: 1px solid var(--color-light);
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--color-accent);
+    }
+
+    &--textarea {
+      resize: none;
+      min-height: 190px;
+    }
+
+    &::placeholder {
+      color: var(--color-gray-alt);
+      font-size: 18px;
+      line-height: 1.3;
+    }
+  }
+}
