@@ -1,6 +1,8 @@
 # Positivus Digital Marketing Agency
 
-The website is built using HTML, CSS (with SCSS for styling).
+## Overview
+
+The Positivus Digital Marketing Agency is an educational project aimed at demonstrating the use of modern web development technologies to create a comprehensive and interactive website. This project leverages HTML, CSS (with SCSS for styling). The website is structured to highlight various aspects of web design and development.
 
 ## Getting Started
 
@@ -15,7 +17,6 @@ To get started with the project, follow these steps:
 - **Responsive Design**: The website is fully responsive, adapting to various screen sizes thanks to the media queries defined in `_media.scss`.
 - **Interactive Elements**: Features like a mobile navigation menu and accordion sections enhance user interaction.
 - **SEO-Friendly**: Semantic HTML and proper heading structure for better search engine visibility.
-- **Accessible Design**: Uses ARIA attributes for better accessibility.
 
 ## Styling and Layout
 
